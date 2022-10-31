@@ -1,0 +1,46 @@
+/book/all--------------------------
+curl --location --request GET 'http://localhost:8080/books/all' \
+--header 'Authorization: Basic bmV3dXNlcjpuZXd1c2Vy'
+-----------------------------------
+
+/books/register--------------------
+curl --location --request POST 'http://localhost:8080/books/register' \
+--header 'Authorization: Basic bmV3dXNlcjpuZXd1c2Vy' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "bookName" : "newbook",
+    "bookDesc" : "newbook",
+    "price" : "782.8298"
+}'
+-----------------------------------
+
+/books/match/name/hostbook---------
+curl --location --request GET 'http://localhost:8080/books/match/name/hostbook' \
+--header 'Authorization: Basic bmV3dXNlcjpuZXd1c2Vy'
+-----------------------------------
+
+/books/name/hostbook---------------
+curl --location --request GET 'http://localhost:8080/books/name/hostbook' \
+--header 'Authorization: Basic bmV3dXNlcjpuZXd1c2Vy'
+-----------------------------------
+
+/books/update----------------------
+curl --location --request PUT 'http://localhost:8080/books/update' \
+--header 'Authorization: Basic bmV3dXNlcjpuZXd1c2Vy' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "bookName" : "newbook",
+    "bookDesc" : "updated newbook",
+    "price" : 910.0010
+}'
+-----------------------------------
+
+/books/delete/newbook2-------------
+curl --location --request DELETE 'http://localhost:8080/books/delete/newbook2' \
+--header 'Authorization: Basic bmV3dXNlcjpuZXd1c2Vy'
+-----------------------------------
+
+/books/bypages/1/10----------------
+curl --location --request GET 'http://localhost:8080/books/bypages/1/10' \
+--header 'Authorization: Basic bmV3dXNlcjpuZXd1c2Vy'
+-----------------------------------
