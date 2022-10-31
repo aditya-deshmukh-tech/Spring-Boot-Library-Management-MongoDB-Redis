@@ -1,6 +1,6 @@
 # Library-Management-Mongodb-Redis
 This is production ready library-management app developed for future reference for production projects
-This application uses mongodb database to insert, update, delete books
+This application uses mongodb database and redis cache to insert, update, delete books
 
 ## Technologies and libraries used
 1. Spring security
@@ -16,7 +16,7 @@ This application uses mongodb database to insert, update, delete books
 ## How to install
 To clone repository use following command
 ```shell
-https://github.com/aditya-deshmukh-tech/library-management-mongodb.git
+https://github.com/aditya-deshmukh-tech/Spring-Boot-Library-Management-MongoDB-Redis.git
 ```
 
 once cloned create jar of project
